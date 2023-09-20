@@ -5,3 +5,7 @@ from django.template import loader
 def members(request):
   template = loader.get_template('myfirst.html')
   return HttpResponse(template.render())
+
+def about(request):
+  template = loader.get_template('about.html')
+  return HttpResponse(template.render())
